@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <main class="container">
+        <div>
+            <h2>Cadastre-se no Clube Anhanguera</h2>
+            <p>Complete todas as informações</p>
+            <br>
+        </div>
+        <form>
+            <fieldset>
+                <legend class="legenda"><strong>Dados Pessoais</strong></legend>
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="tel" name="tel" id="tel" placeholder="Número de telefone/celular" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <label class="descricao">Data de Nascimento:</label>
+                        <input type="date" name="idade" id="idade" placeholder="Data de Nascimento" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <label class="descricao">Gênero:</label>
+                        <select id="genero">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Outro</option>
+                        </select>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="Senha" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirmar senha" required>
+                        <div class="underline"></div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="legenda"><strong>Dados Complementares</strong></legend>
+                    <div class="opcoes">
+                        <label class="perguntas">Como ficou sabendo do Clube Anhanguera?</label>
+                        <label>
+                            <input type="radio" name="fonte" id="redessociais">Redes Socais
+                        </label>
+                        <label>
+                            <input type="radio" name="fonte" id="familiares">Familiares
+                        </label>
+                        <label>
+                            <input type="radio" name="fonte" id="conhecidos">Conhecidos
+                        </label>
+                        <label>
+                            <input type="radio" name="fonte" id="outdoor">Anúncio em Outdoor
+                        </label>
+                        <label>
+                            <input type="radio" name="fonte" id="outro">Outra forma
+                        </label>
+                    </div>
+
+                    <div class="multiopcoes">
+                        <label class="perguntas">Quais serviços do Clube pretende usar?</label>
+                        <br>
+                        <input type="checkbox" id="servico1" name="servico1" value="Piscina"> 
+                        <label for="servico1">Piscina</label>
+                        <br>
+                        <input type="checkbox" id="servico2" name="servico2" value="Sala de jogos">
+                        <label for="servico2">Sala de Jogos</label>
+                        <br>
+                        <input type="checkbox" id="servico3" name="servico3" value="Academia">
+                        <label for="servico3">Academia</label>
+                        <br>
+                        <input type="checkbox" id="servico4" name="servico4" value="Parque infantil">
+                        <label for="servico4">Parque Infantil</label>
+                        <br>
+                        <input type="checkbox" id="servico5" name="servico5" value="Restaurante">
+                        <label for="servico5">Restaurante</label>
+                        <br> <br>
+                    </div>
+            </fieldset> 
+
+            <fieldset>
+                <legend class="legenda"><strong>Pagamento</strong></legend>
+                    <div class="opcoes">
+                        <label class="perguntas">R$ 100,00 por mês | Renovação automática</label>
+                        <label class="perguntas">Selecione um tipo de cartão:</label>
+                        <label id="radio">
+                            <input type="radio" name="cartao" id="credito">Crédito
+                        </label>
+                        <label>
+                            <input type="radio" name="cartao" id="debido">Débito
+                        </label>
+                    </div>
+            </fieldset>
+
+            <input type="submit" value="Continue">        
+        </form>
+    </main>
+</body>
+</html>

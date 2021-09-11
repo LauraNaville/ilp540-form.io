@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Popins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 80vh;
+    display: flex;
+}
+
+main.container {
+    background: white;
+    margin-top: 50px;
+    max-width: 600px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;  
+}
+main h2 {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    position: relative;
+    color: #191970;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.descricao {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.perguntas {
+    font-size: 1rem;
+    color: #483D8B;
+    margin-bottom: 50px;
+}
+
+.legenda {
+    font-size: 1.1rem;
+    color: #5D478B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -4px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 60%;
+    height: 2.3rem;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+}
+
+.opcoes label{
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.multiopcoes{
+    display: block;
+}
+
+.input-field select {
+    padding: 0.2em;
+    border: 1.5px solid #483D8B;
+    box-shadow: 2px 2px #606060;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.input-field select option{
+    padding-right: 1em;
+}
